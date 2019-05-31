@@ -4,11 +4,16 @@
   "description": "",
   "main": "server.js",
   "scripts": {
+    "dev": "nodemon server.js", 
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "jsonwebtoken": "^8.5.1",
     "ws": "^7.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
   }
 }

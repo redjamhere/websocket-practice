@@ -1,6 +1,7 @@
 const WebSocket = require('ws')
 
-const server = new WebSocket.Server({ port: 3000 })
+const server = new WebSocket.Server({port: 3000,
+})
 
 server.on('connection', ws => {
 
@@ -12,5 +13,9 @@ server.on('connection', ws => {
     })
   })
 
-  ws.send('dsdsds')
+  ws.send(JSON.stringify({
+    id: 1,
+    text: 'fdfsfdf'
+  }))
+  // ws.send('fdfsdfsd')
 })
